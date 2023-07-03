@@ -11,9 +11,16 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="prose mx-auto flex font-serif lowercase">
+  <body class="prose mx-auto font-serif lowercase">
+
+    <!-- alerts start -->
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <!-- alerts end -->
+
     <main class="mx-auto flex">
       <%= yield %>
     </main>
+
   </body>
 </html>
