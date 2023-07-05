@@ -1,15 +1,5 @@
-<div>
-  <h1>Articles</h1>
-
-  Our blog has <%= Article.public_count + 1 %> articles and counting!
-
-  <ul>
-    <% @articles.each do |article| %>
-      <% unless article.archived? %>
-        <li>
-          <%= link_to article.title, article %>
-        </li>
-      <% end %>
-    <% end %>
-  </ul>
-</div>
+<% @articles.each do |article| %>
+  <% unless article.archived? %>
+    <%= render 'article_card', article: article%>
+  <% end %>
+<% end %> 
