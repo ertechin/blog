@@ -11,16 +11,23 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body class="prose mx-auto font-serif lowercase">
+  <body class="mx-auto font-serif lowercase">
+    <div class="antialiased">
+      <%= render 'layouts/header'%>
+        <!-- alerts start -->
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <!-- alerts end -->
 
-    <!-- alerts start -->
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <!-- alerts end -->
-
-    <main class="mx-auto flex">
-      <%= yield %>
-    </main>
-
+      <main class="p-4 h-auto">
+        <section class="text-gray-600 body-font overflow-hidden">
+          <div class="container px-5 py-24 mx-auto">
+            <div class="-my-8 divide-y-2 divide-gray-100">
+                  <%= yield %>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
