@@ -29,14 +29,14 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  hi_mom: "hi mom"
+tr:
+  hi_mom: "merhaba anne"
   views:
     login: "giriş yap"
     navbar:
-      about: "about"
+      about: "hakkımda"
       blog: "blog"
-      contact: "contact"
+      contact: "iletişim"
   article:
-    read_more: "read more"
+    read_more: "okumaya devam et"
     index:
